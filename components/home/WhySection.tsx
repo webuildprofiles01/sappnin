@@ -63,45 +63,42 @@ export function WhySection() {
             <div key={feature.id} className="flex flex-col justify-start">
               {/* Responsive Image Card */}
               <div className="relative max-w-[400px] mx-auto rounded-3xl overflow-hidden">
-                {typeof feature.image === "object" ? 
-                (
-                  <>
-                    <div className="block sm:hidden relative">
+                {typeof feature.image === "object" ?
+                  (
+                    <>
+                      <div className="block sm:hidden relative w-[58.86vw] aspect-[3/4]">
+                        <Image
+                          src={feature.image.mobile}
+                          alt={feature.alt}
+                          fill
+                          className="object-contain"
+                          priority
+                        />
+                      </div>
+
+                      <div className="hidden sm:block relative aspect-[4/5] w-[22.80vw]">
+                        <Image
+                          src={feature.image.desktop}
+                          alt={feature.alt}
+                          className="object-contain block"
+                          priority
+                          fill
+                          sizes="(min-width: 640px) 45vw, 100vw"
+                        />
+                      </div>
+                    </>
+                  ) : (
+                    <div className="block relative aspect-[4/5] w-[22.80vw]">
                       <Image
-                        src={feature.image.mobile}
+                        src={feature.image}
                         alt={feature.alt}
-                        width={259}
-                        height={259}
-                        className="object-cover block"
+                        className="object-contain block"
                         priority
-                      />
-                    </div>
-                    <div className="hidden sm:block relative">
-                      <Image
-                        src={feature.image.desktop}
-                        alt={feature.alt}
-                      
-                        className="object-cover block"
-                        priority
-                        width={437.84}
-                        height={437.84}
+                        fill
                         sizes="(min-width: 640px) 45vw, 100vw"
                       />
                     </div>
-                  </>
-                ) : (
-                  <div className="relative">
-                    <Image
-                      src={feature.image}
-                      alt={feature.alt}
-                      className="object-cover block"
-                      priority
-                      width={437.84}
-                      height={437.84}
-                      sizes="(min-width: 640px) 45vw, 100vw"
-                    />
-                  </div>
-                )}
+                  )}
               </div>
 
               {/* Title */}
