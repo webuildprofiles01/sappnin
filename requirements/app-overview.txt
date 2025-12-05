@@ -1,0 +1,79 @@
+Introduction: Overview of Sappnin
+•	Sappnin is an innovative dating and meet & greet application designed to create authentic and meaningful connections in the modern digital age. Unlike traditional dating apps, Sappnin focuses on fostering genuine relationships by ensuring that users can only communicate if they are mutually interested and both are online simultaneously. This unique approach encourages active participation, ensuring that users are truly engaged in their interactions.
+•	Drawing inspiration from successful dating platforms like Tinder and Bumble, Sappnin offers a user-friendly interface combined with advanced features to enhance the dating experience. However, it sets itself apart with its unique 'Link' system, where connections between users are established through mutual consent and online availability. This feature ensures that users interact only when both parties are ready, promoting more meaningful conversations.
+App Design Overview
+•	User Interface (UI) Design
+–	Color Scheme: The app uses a modern and clean color palette that promotes user engagement and ease of navigation. Primary colors are used to highlight important actions like sending a "Link" request or messaging.
+–	Typography: Consistent and readable fonts are used throughout the app, with clear distinctions between headings, subheadings, and body text.
+–	Iconography: Intuitive icons are used to represent actions like "Like," "Send Message," "Send Link," and navigation buttons. This helps in quick user recognition and interaction
+Onboarding & Sign Up/Log In
+•	Welcome Screens: The onboarding process introduces users to the app’s key features, such as the "Link" system, privacy controls, and the ability to find nearby users.
+•	Key Features of Sign Up/Log In:
+–	Options to sign up using Google, Facebook, or Email
+–	Email & Phone Number Verification: Mandatory during sign-up.
+•	Account Creation: Users can create an account using their email and phone number.
+•	Verification Process: After creating an account, users must verify their identity by submitting a live video, which will be reviewed by the admin. Once approved, the user will receive a verified badge on their profile.
+
+
+
+User Profiles
+•	Profile Creation: Users will create their profiles using their verified email and phone number. The profile will include details such as age, gender, relationship status, and gender preference for Links.
+•	Profile Verification: A verified badge will be granted to users after their live video submission is approved by the admin.
+•	Profile Editing: Users can edit their profiles and add new pictures at any time. These pictures will be visible to all other users within the application.
+Home Screen
+•	Key Features of Home Screen:
+–	Home Page: It’s will show your current location & people around you in any distance that’s been set while creating profile.
+–	Bottom navigation bar includes: Home Page, Links & Request tabs, Messages, and Profile.
+–	Online/Offline: There will be a Sappnin logo button for getting Online/Offline.
+–	User Feed: Displays nearby users based on selected filters (age, distance, gender).
+Profile Page
+•	Key Features of Profile Page:
+–	User Information: Displays age, gender, relationship status, marital status, Short Bio, Active/Inactive Status and verified badge.
+–	Profile Editing: Users can update profile info and add new pictures.
+–	Verification Badge: Granted after successful live video verification.
+–	Setting: This will include basic preference, Age range for links, Location, Blocked persons, Privacy Policy, About US(Sappnin), Delete account, Log Out
+
+
+
+
+
+Search & Matching
+•	Search Filters: Users can apply filters such as age, distance, and gender to refine their search results.
+•	Nearby Users: A list button at the top of the screen allows users to quickly find nearby people.
+•	Profile Browsing:
+–	Users swipe right or left to browse through profiles.
+–	User will click on user to see details.
+–	Three action buttons at the bottom allow users to "Like," "Send Message Request," or "Send Link Request."
+•	Accepting Requests: User can send & receive request for message & Link. Receiver will accept or decline the request. 
+•	Accepted link request will add user in Links list
+•	Accepted message request will add user in my Chat list
+•	Declining Requests: Sender will not be informed about the declined request. 
+Chat Functionalities
+•	Key Features of Chat Functionalities:
+–	Real-time Messaging: Users exchange text and image messages in real-time.
+–	Message request: user can chat to the other users who are not in your link list, only after their message request has been accepted.
+–	Nearby Users: Browse and chat with nearby people using a list button.
+There will be the following scenarios for Chat Functionalities.
+•	Sending a Chat request & Link request: When I send a chat request there will be 2 scenarios.
+–	Accepted: If my chat request is accepted, I will be able to chat with that Girl/Boy.
+•	If my Link request is accepted, He/she will be in my link list & my chat will stay but I will be able to chat with him/her only when we both are online.
+•	If my link request is not accepted, we still can chat but my chat will be deleted after I go offline.
+–	Declined: When my chat request is declined, I won’t be able to chat with that user.
+
+
+
+•	Receiving a Chat Request & Link request: When I receive a chat request there will be following scenarios.
+–	Accept: If I accept the chat request I will be able to chat with that Girl/Boy
+•	If I also accept Link request, I will be able to chat with Girl/Boy & my chat will stay but I will be able to chat with Him/her only when we both are Online.
+•	If I decline Link request, we still can chat with him/her, but my chat will be deleted when he/she go offline.
+•	Chat Color: When chat is delivered it will show blue color, it will turn orange (Sappnin logo color) when message is read.
+Admin Panel
+•	Key Features of Admin Panel:
+–	User Management: View, edit, block, or suspend users.
+–	Content Moderation: Review live video submissions and handle reports.
+–	Analytics: Quick insights into user activity, chat interactions, and matches.
+Additional Functionalities
+•	Other Important Features:
+–	Privacy Settings: Control location sharing, online status, and profile visibility.
+–	Push Notifications: Alerts for messages, matches, and other interactions.
+–	In-App Notifications: Notifications appear at the top of the screen when the app is open.

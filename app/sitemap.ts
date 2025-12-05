@@ -1,0 +1,20 @@
+import { MetadataRoute } from 'next'
+
+export default function sitemap(): MetadataRoute.Sitemap {
+    const baseUrl = 'https://sappnin.io'
+
+    // Define all static routes
+    const routes = [
+      '',
+      '/features',
+      '/contact',
+      '/download'
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'daily' as const,
+    priority: route === '' ? 1 : 0.8,
+  }))
+
+  return routes
+} 
