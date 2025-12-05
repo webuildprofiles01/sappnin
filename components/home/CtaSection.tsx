@@ -6,20 +6,20 @@ export function CtaSection() {
     <section className="py-32 bg-white">
       <Container>
         <div className="text-center">
-          <h2 className="text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[3.71vw] xl:text-[3.71vw] font-normal mb-4 leading-none">
+          <h2 className="text-[5.17vw] sm:text-[5.17vw] md:text-[3.71vw] lg:text-[3.71vw] xl:text-[3.71vw] font-normal mb-2 md:mb-4 leading-none">
             What are you waiting for?
           </h2>
-          <h3 className="text-[2.5rem] sm:text-[4rem] md:text-[5rem] lg:text-[5.66vw] xl:text-[5.66vw] font-medium mb-8 leading-none">
+          <h3 className="text-[7.90vw] sm:text-[7.90vw] md:text-[5.66vw] lg:text-[5.66vw] xl:text-[5.66vw] font-medium mb-0 md:mb-8 leading-none">
             Download the app
           </h3>
           <div className="overflow-hidden">
-            <p className="text-[8rem] sm:text-[16rem] md:text-[20rem] lg:text-[22rem] xl:text-[24.04vw] font-extrabold text-brand-orange mb-16 leading-[0.8] tracking-tighter">
+            <p className="text-[33.53vw] sm:text-[33.53vw] md:text-[24.04vw] lg:text-[24.04vw] xl:text-[24.04vw] font-extrabold text-brand-orange mb-0 md:mb-16 leading-none">
               Now!
             </p>
           </div>
 
           {/* Download Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
             <DownloadButtons />
           </div>
         </div>

@@ -99,10 +99,10 @@ export function ImageSlider() {
       <Container>
         {/* Heading */}
         <div className="text-center mb-8 mt-8 sm:mb-16 sm:mt-0">
-          <h2 className="text-[2rem] sm:text-[2rem] md:text-[4rem] lg:text-[7.8vw] font-extrabold leading-none">
+          <h2 className="text-[7.58vw] sm:text-[7.58vw] md:text-[7.8vw] lg:text-[7.8vw] font-extrabold leading-none">
             REAL PEOPLE
           </h2>
-          <h2 className="text-[2rem] sm:text-[2rem] md:text-[4rem] lg:text-[7.54vw] font-extrabold leading-none">
+          <h2 className="text-[8.5vw] sm:text-[8.5vw] md:text-[7.54vw] lg:text-[7.54vw] font-extrabold leading-none">
             REAL CONNECTIONS
           </h2>
         </div>

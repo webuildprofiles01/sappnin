@@ -7,10 +7,10 @@ export function AppInfo() {
       {/* Text Content - Inside Container */}
       <Container>
         <div className="text-center text-white mb-4 sm:mb-16">
-          <h2 className="text-[10.31vw] sm:text-7xl md:text-8xl lg:text-[10.31vw] font-extrabold mb-2 sm:mb-2 text-white leading-tight">
+          <h2 className="text-[11.89vw] sm:text-[11.89vw] md:text-[10.31vw] lg:text-[10.31vw] font-extrabold mb-2 sm:mb-2 text-white leading-none">
             SPONTANEITY
           </h2>
-          <p className="text-2xl sm:text-4xl md:text-5xl lg:text-[3.95vw] font-medium leading-none">
+          <p className="text-[4.55vw] sm:text-[4.55vw] md:text-[3.95vw] lg:text-[3.95vw] font-medium leading-none">
             IS THE BEST TYPE OF ADVENTURE
           </p>
         </div>

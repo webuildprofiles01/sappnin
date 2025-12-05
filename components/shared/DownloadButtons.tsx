@@ -3,10 +3,10 @@ import Link from "next/link"
 
 export function DownloadButtons() {
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-row gap-6 md:gap-0">
       <Link 
         href="#" 
-        className="w-[9.47vw] h-[62px] md:w-[9.47vw] md:h-[60px] relative transition-transform hover:scale-105"
+        className="w-[28.36vw] h-[62px] md:w-[19.69vw] md:h-[60px] relative transition-transform hover:scale-105"
       >
         <Image
           src="/images/logos/app-store.png"
@@ -18,7 +18,7 @@ export function DownloadButtons() {
       </Link>
       <Link 
         href="#" 
-        className="w-[9.47vw] h-[62px] md:w-[9.47vw] md:h-[60px] relative transition-transform hover:scale-105"
+        className="w-[28.36vw] h-[62px] md:w-[19.69vw] md:h-[60px] relative transition-transform hover:scale-105"
       >
         <Image
           src="/images/logos/google-play.png"

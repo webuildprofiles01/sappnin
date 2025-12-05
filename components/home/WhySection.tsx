@@ -45,7 +45,7 @@ export function WhySection() {
     <section className="py-12 sm:py-20 bg-white">
       <Container>
         {/* Heading */}
-        <h2 className="text-center text-[2rem] md:text-[4rem] lg:text-[7.41vw] font-extrabold mb-6 sm:mb-16 px-2 leading-none">
+        <h2 className="text-center text-[8.05vw] md:text-[7.41vw] lg:text-[7.41vw] font-extrabold mb-16 sm:mb-20 px-2 leading-none">
           <span className="text-black">WHY </span>
           <span className="text-brand-orange">SAPPNIN </span>
           <span className="text-brand">IS</span>
@@ -67,7 +67,7 @@ export function WhySection() {
                         src={feature.image.desktop}
                         alt={feature.alt}
                         fill
-                        className="object-cover block"
+                        className="object-contain block"
                         priority
                         sizes="(min-width: 640px) 45vw, 100vw"
                       />
@@ -98,7 +98,7 @@ export function WhySection() {
               </div>
 
               {/* Title */}
-              <h3 className="text-[2.08vw] sm:text-[2.08vw] font-semibold text-center px-2 mt-0">
+              <h3 className="text-[4.36vw] md:text-[2.08vw] lg:text-[2.08vw] xl:text-[2.08vw] font-semibold text-center px-2 mt-0">
                 {feature.title}
               </h3>
             </div>

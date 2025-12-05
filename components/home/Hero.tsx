@@ -30,12 +30,12 @@ export function Hero() {
       <Container className="relative z-10 h-[115vh] flex flex-col justify-end pb-12">
         <div className="flex flex-col items-center justify-end w-full">
           {/* Main Title */}
-          <h1 className="font-extrabold leading-none text-[16.49vw] sm:text-[16.49vw] md:text-[16.49vw] lg:text-[16.49vw] xl:text-[16.49vw] pt-0 text-brand-orange text-center">
+          <h1 className="font-extrabold leading-none text-[19.31vw] sm:text-[16.49vw] md:text-[16.49vw] lg:text-[16.49vw] xl:text-[16.49vw] pt-0 text-brand-orange text-center">
             SAPPNIN
           </h1>
 
           {/* Subtitle */}
-          <p className="text-base sm:text-[2.18vw] md:text-[2.18vw] lg:text-[2.18vw] font-medium sm:mb-5 text-white tracking-wide max-w-[95%] text-center">
+          <p className="text-[3.14vw] sm:text-[3.14vw] md:text-[2.18vw] lg:text-[2.18vw] font-medium sm:mb-5 text-white tracking-wide max-w-[95%] text-center">
             CREATING SPONTANEOUS MEETUPS WITH INDIVIDUALS AND SOCIAL GROUPS
           </p>
 
