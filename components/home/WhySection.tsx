@@ -58,7 +58,7 @@ export function WhySection() {
         </h2>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-8 sm:gap-12 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 sm:gap-12 max-w-6xl mx-auto">
           {features.map((feature) => (
             <div key={feature.id} className="flex flex-col justify-start">
               {/* Responsive Image Card */}
@@ -66,7 +66,7 @@ export function WhySection() {
                 {typeof feature.image === "object" ?
                   (
                     <>
-                      <div className="block sm:hidden relative w-[58.86vw] aspect-[3/4]">
+                      <div className="block sm:hidden relative w-[58.86vw] aspect-[1/1]">
                         <Image
                           src={feature.image.mobile}
                           alt={feature.alt}
@@ -76,7 +76,7 @@ export function WhySection() {
                         />
                       </div>
 
-                      <div className="hidden sm:block relative aspect-[4/5] w-[22.80vw]">
+                      <div className="hidden sm:block relative aspect-[1/1] w-[22.80vw]">
                         <Image
                           src={feature.image.desktop}
                           alt={feature.alt}
@@ -88,7 +88,7 @@ export function WhySection() {
                       </div>
                     </>
                   ) : (
-                    <div className="block relative aspect-[4/5] w-[22.80vw]">
+                    <div className="block relative aspect-[1/1] w-[22.80vw]">
                       <Image
                         src={feature.image}
                         alt={feature.alt}
