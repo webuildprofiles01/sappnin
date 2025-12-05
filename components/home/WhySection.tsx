@@ -70,8 +70,8 @@ export function WhySection() {
                       <Image
                         src={feature.image.mobile}
                         alt={feature.alt}
-                        width={234}
-                        height={234}
+                        width={259}
+                        height={259}
                         className="object-cover block"
                         priority
                       />
@@ -105,7 +105,7 @@ export function WhySection() {
               </div>
 
               {/* Title */}
-              <h3 className="text-[4.36vw] md:text-[2.08vw] lg:text-[2.08vw] xl:text-[2.08vw] font-semibold text-center px-2 mt-0">
+              <h3 className="text-[4.36vw] md:text-[2.08vw] lg:text-[2.08vw] xl:text-[2.08vw] max-w-[215px] md:max-w-none font-semibold text-center px-2 mt-2 self-center">
                 {feature.title}
               </h3>
             </div>
