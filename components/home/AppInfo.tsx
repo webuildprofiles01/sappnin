@@ -58,18 +58,17 @@ export function AppInfo() {
 
         {/* Mobile Layout - Only Phone */}
         <div className="block sm:hidden relative h-[500px]">
-          <div className="absolute -left-[20%] -bottom-[21%]">
+          <div className="absolute -left-[20%] -bottom-[21%] w-[48.47vw] aspect-[1.94/3]">
             <Image
               src="/images/logos/app-icon.png"
               alt="Sappnin W"
-              width={250}
-              height={250}
+              fill
               className="opacity-100"
             />
           </div>
           
           {/* Phone Mockup */}
-          <div className="absolute right-0 -bottom-[20%] w-3/4">
+          <div className="absolute right-[5%] -bottom-[25%] w-3/4">
             <div className="relative h-[500px]">
               <Image
                 src="/images/features/phone-mockup.png"

@@ -76,7 +76,7 @@ export function WhySection() {
                         />
                       </div>
 
-                      <div className="hidden sm:block relative aspect-[1/1] w-[22.80vw]">
+                      <div className="hidden sm:block relative aspect-[1/1] w-[23.90vw]">
                         <Image
                           src={feature.image.desktop}
                           alt={feature.alt}

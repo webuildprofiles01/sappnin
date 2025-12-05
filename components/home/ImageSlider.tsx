@@ -110,12 +110,12 @@ export function ImageSlider() {
                   {/* Desktop Grid */}
           <div className="hidden lg:grid grid-cols-4 gap-6 max-w-[1400px] mx-auto">
             {slides.map((slide) => (
-              <div key={slide.id} className="relative aspect-[4/5] rounded-3xl overflow-hidden">
+              <div key={slide.id} className="relative aspect-[4/5] w-[58.86vw]  md:w-[23.90vw] rounded-3xl overflow-hidden">
                 <Image
                   src={slide.image.desktop}
                   alt={slide.alt}
                   fill
-                  className="object-cover object-center"
+                  className="object-contain object-center"
                   sizes="(min-width: 1024px) 25vw, 100vw"
                 />
               </div>
