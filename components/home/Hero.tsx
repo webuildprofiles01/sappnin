@@ -4,7 +4,7 @@ import { DownloadButtons } from "@/components/shared/DownloadButtons"
 
 export function Hero() {
   return (
-    <section className="relative min-h-full sm:min-h-screen">
+    <section className="relative min-h-full sm:min-h-[calc(100vh-4rem)]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         {/* Desktop Image */}
