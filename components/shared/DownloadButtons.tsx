@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export function DownloadButtons() {
   return (
-    <div className="flex flex-row gap-6 md:gap-0">
+    <div className="flex flex-row gap-4 md:gap-4 max-w-none md:max-w-[30vw]">
       <Link 
         href="#" 
         className="w-[28.36vw] h-[62px] md:w-[19.69vw] md:h-[60px] relative transition-transform hover:scale-105"

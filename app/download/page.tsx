@@ -36,11 +36,11 @@ export default function DownloadPage() {
               </Button>
 
               {/* Available On Text */}
-              <p className="text-[1vw] lg:text-[1vw] mb-4 lg:mb-0 text-center">AVAILABLE ON</p>
+              <p className="text-[1vw] lg:text-[1vw] mb-4 lg:mb-4 text-center">AVAILABLE ON</p>
 
               {/* Store Buttons */}
-              <div className="flex items-center gap-4 lg:gap-6">
                 <DownloadButtons />
+              <div className="flex items-center gap-0 lg:gap-0">
               </div>
             </div>
 

@@ -77,7 +77,7 @@ export function Header() {
                       className={`text-[2.03vw] font-medium hover:text-brand-orange transition-colors ${
                         item.href === pathname 
                           ? "text-brand-orange border-b-2 border-brand-orange pb-1" 
-                          : (isHome || isContact) && !isScrolled ? "text-white" : "text-black"
+                          : (isHome || isContact) ? "text-white" : "text-black"
                       }`}
                     >
                       {item.name}

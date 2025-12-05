@@ -34,7 +34,11 @@ const features: Feature[] = [
   },
   {
     id: 3,
-    image: "/images/features/app-usage.png",
+    // image: "/images/features/app-usage.png",
+    image: {
+      desktop: "/images/features/app-usage.png",
+      mobile: "/images/features/app-usage.png"
+    },
     title: "See who's online in your area for real time connections",
     alt: "Person using Sappnin app"
   }
@@ -58,39 +62,42 @@ export function WhySection() {
           {features.map((feature) => (
             <div key={feature.id} className="flex flex-col justify-start">
               {/* Responsive Image Card */}
-              <div className="relative aspect-[4/5] w-full max-w-[400px] mx-auto rounded-3xl overflow-hidden">
+              <div className="relative max-w-[400px] mx-auto rounded-3xl overflow-hidden">
                 {typeof feature.image === "object" ? 
                 (
                   <>
-                    <div className="block sm:hidden relative w-full h-full">
-                      <Image
-                        src={feature.image.desktop}
-                        alt={feature.alt}
-                        fill
-                        className="object-contain block"
-                        priority
-                        sizes="(min-width: 640px) 45vw, 100vw"
-                      />
-                    </div>
-                    <div className="hidden sm:block relative w-full h-full">
+                    <div className="block sm:hidden relative">
                       <Image
                         src={feature.image.mobile}
                         alt={feature.alt}
-                        fill
+                        width={234}
+                        height={234}
                         className="object-cover block"
                         priority
+                      />
+                    </div>
+                    <div className="hidden sm:block relative">
+                      <Image
+                        src={feature.image.desktop}
+                        alt={feature.alt}
+                      
+                        className="object-cover block"
+                        priority
+                        width={437.84}
+                        height={437.84}
                         sizes="(min-width: 640px) 45vw, 100vw"
                       />
                     </div>
                   </>
                 ) : (
-                  <div className="relative w-full h-full">
+                  <div className="relative">
                     <Image
                       src={feature.image}
                       alt={feature.alt}
-                      fill
                       className="object-cover block"
                       priority
+                      width={437.84}
+                      height={437.84}
                       sizes="(min-width: 640px) 45vw, 100vw"
                     />
                   </div>
