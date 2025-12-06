@@ -51,19 +51,19 @@ export function Header() {
           <div className="flex items-center justify-between sm:justify-center transition-all duration-300">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-[9.69vw] aspect-square relative">
+              <div className="hidden sm:block w-[9.69vw] aspect-square relative">
                 <Image
                 src="/images/logos/sappnin-logo.png"
                 alt="Sappnin"
                 width={150}
                 height={150}
-                className="hidden sm:block w-[120px] sm:w-[160px]"
+                className="w-[120px] sm:w-[160px]"
               />
               </div>
               <Image
                 src="/images/logos/logo-mobile.png"
                 alt="Sappnin"
-                width={200}
+                width={300}
                 height={200}
                 className="block sm:hidden w-[120px]"
               />
