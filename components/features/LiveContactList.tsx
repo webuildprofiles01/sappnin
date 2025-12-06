@@ -20,12 +20,12 @@ export function LiveContactList() {
 
           {/* Mobile Title - Above Phone */}
           <div className="block lg:hidden text-white text-center mb-8">
-            <h2 className="text-4xl font-bold">
+            <h2 className="text-[6.7vw] font-bold leading-none">
               LIVE
-              <p className="block text-[4rem] sm:text-[6rem] text-white leading-none tracking-tight m-0 p-0">
+              <p className="block text-[13.125vw] sm:text-[13.125vw] text-white leading-none tracking-tight m-0 p-0">
                 CONTACT
                 <br />
-                <span className="text-[8rem] sm:text-[8rem]">LIST:</span>
+                <span className="text-[28.83vw] sm:text-[28.83vw] p-0 m-0 mt-[-20px]">LIST:</span>
               </p>
             </h2>
           </div>
@@ -69,7 +69,7 @@ export function LiveContactList() {
                     </span>
                 </p>
               </h2>
-              <p className="text-[2.37vw] md:text-[2.37vw] leading-[2.7rem] font-semibold mt-6">
+              <p className="text-[2.37vw] sm:text-[2.37vw] leading-[2.7rem] font-semibold mt-6">
                 Easily access and interact with online
                 <br />contacts in real time.
               </p>
@@ -78,9 +78,9 @@ export function LiveContactList() {
 
           {/* Mobile Paragraph - Below Phone */}
           <div className="text-white text-center mt-8 block lg:hidden">
-            <p className="text-2xl font-regular">
-              Easily access and interact with online
-              <br />contacts in real time.
+            <p className="text-[4.77vw] font-regular">
+              Easily access and interact with
+              <br />online contacts in real time.
             </p>
           </div>
         </div>
