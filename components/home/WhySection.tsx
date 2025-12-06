@@ -62,17 +62,17 @@ export function WhySection() {
           {features.map((feature) => (
             <div key={feature.id} className="flex flex-col justify-start">
               {/* Responsive Image Card */}
-              <div className="relative max-w-[400px] mx-auto rounded-3xl overflow-hidden">
+              <div className="relative max-w-full mx-auto rounded-3xl overflow-hidden">
                 {typeof feature.image === "object" ?
                   (
                     <>
-                      <div className="block sm:hidden relative w-[58.86vw] aspect-[1/1]">
+                      <div className="block sm:hidden relative w-[68.86vw] aspect-[1/1]">
                         <Image
                           src={feature.image.mobile}
                           alt={feature.alt}
-                          fill
-                          className="object-contain"
+                          className="object-contain block"
                           priority
+                          fill
                         />
                       </div>
 

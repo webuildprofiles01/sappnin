@@ -110,7 +110,7 @@ export function ImageSlider() {
                   {/* Desktop Grid */}
           <div className="hidden lg:grid grid-cols-4 gap-6 max-w-[1400px] mx-auto">
             {slides.map((slide) => (
-              <div key={slide.id} className="relative aspect-[4/5] w-[58.86vw]  md:w-[23.90vw] rounded-3xl overflow-hidden">
+              <div key={slide.id} className="relative aspect-[4/5] w-[58.86vw] md:w-[23.90vw] rounded-3xl overflow-hidden">
                 <Image
                   src={slide.image.desktop}
                   alt={slide.alt}
@@ -148,7 +148,7 @@ export function ImageSlider() {
               <div className="flex">
                 {slides.map((slide) => (
                   <div key={slide.id} className="flex-[0_0_100%] sm:flex-[0_0_45%] px-8 sm:px-4">
-                    <div className="relative aspect-[4/5] w-full max-w-[400px] mx-auto rounded-3xl overflow-hidden">
+                    <div className="relative aspect-[4/5] w-[68.86vw] mx-auto rounded-3xl overflow-hidden">
                       <Image
                         src={slide.image.desktop}
                         alt={slide.alt}

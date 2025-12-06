@@ -33,8 +33,9 @@ export function AppInfo() {
             <Image
               src="/images/logos/app-icon.png"
               alt="Sappnin W"
-              width={500}
-              height={750}
+              width={0}
+              height={0}
+              sizes="34.339vw"
               style={{ width: '34.339vw', height: 'auto' }}
               className="opacity-100"
             />
@@ -57,7 +58,7 @@ export function AppInfo() {
         </div>
 
         {/* Mobile Layout - Only Phone */}
-        <div className="block sm:hidden relative h-[500px]">
+        <div className="block sm:hidden relative h-[400px]">
           <div className="absolute -left-[20%] -bottom-[21%] w-[48.47vw] aspect-[1.94/3]">
             <Image
               src="/images/logos/app-icon.png"
