@@ -32,7 +32,7 @@ export default function ContactPage() {
         </div>
 
         {/* Form Container */}
-        <div className="hidden sm:flex relative z-10 items-start sm:items-center sm:justify-end max-w-[75rem]">
+        <div className="hidden sm:flex relative z-10 items-start sm:items-center sm:justify-end max-w-[1440px]">
           <div className="w-full bg-transparent sm:bg-transparent lg:w-1/2 px-6 py-0 sm:px-4 lg:px-12">
             <ContactForm />
           </div>
