@@ -48,7 +48,7 @@ export function Header() {
         (isHome || isContact) ? "bg-transparent" : "bg-white"
       }`}>
         <Container>
-          <div className="flex items-center justify-between py-2 transition-all duration-300">
+          <div className="flex items-center justify-around transition-all duration-300">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
               <Image
@@ -68,8 +68,8 @@ export function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex flex-1 justify-center ">
-              <ul className="flex items-center gap-16">
+            <nav className="hidden md:flex flex-1 justify-start ml-20">
+              <ul className="flex items-start gap-16">
                 {navigation.map((item) => (
                   <li key={item.name}>
                     <Link

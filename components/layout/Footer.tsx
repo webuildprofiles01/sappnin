@@ -60,8 +60,8 @@ export function Footer() {
                 <Image
                   src="/images/logos/sappnin-logo.png"
                   alt="Sappnin Logo"
-                  width={200}
-                  height={200}
+                  width={150}
+                  height={150}
                 />
               </Link>
 

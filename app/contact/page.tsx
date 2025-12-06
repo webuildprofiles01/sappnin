@@ -3,8 +3,8 @@ import Image from "next/image"
 
 export default function ContactPage() {
   return (
-    <section className="h-[120vh] bg-black">
-      <div className="relative h-full">
+    <section className="h-[110vh] bg-black">
+      <div className="relative h-full flex flex-col lg:justify-center pt-48">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           {/* Mobile Image */}
@@ -32,8 +32,8 @@ export default function ContactPage() {
         </div>
 
         {/* Form Container */}
-        <div className="relative z-10 flex items-end sm:items-center sm:justify-end pt-24 max-w-[75rem]">
-          <div className="w-full bg-transparent sm:bg-transparent lg:w-1/2 px-6 py-12 sm:px-4 lg:px-12">
+        <div className="relative z-10 flex items-start sm:items-center sm:justify-end max-w-[75rem]">
+          <div className="w-full bg-transparent sm:bg-transparent lg:w-1/2 px-6 py-0 sm:px-4 lg:px-12">
             <ContactForm />
           </div>
         </div>
