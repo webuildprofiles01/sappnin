@@ -22,8 +22,8 @@ export function HeatMap() {
           </div>
 
           {/* Phone Image */}
-          <div className="relative w-[71.24vw] sm:w[38vw] max-w-md lg:max-w-[38vw] mx-auto">
-            <div className="relative h-[600px] lg:h-[800px]">
+          <div className="relative w-full max-w-md lg:max-w-[38vw] mx-auto my-5  sm:my-0">
+            <div className="relative h-[400.65px] sm:h-[600px] lg:h-[800px]">
               <Image
                 src="/images/features/1.png"
                 alt="Sappnin Heat Map"
