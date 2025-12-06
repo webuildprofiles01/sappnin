@@ -124,7 +124,7 @@ export function Footer() {
             </div>
 
             {/* Legal Links - Mobile Only */}
-            <div className="flex lg:hidden justify-center col-span-1">
+            <div className="flex hidden justify-center col-span-1">
               <div className="flex gap-4 flex-wrap justify-center">
                 {legalLinks.map((item) => (
                   <Link
