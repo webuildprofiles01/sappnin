@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ContactPage() {
   return (
-    <section className="h-[110vh] bg-black">
+    <section className="h-auto sm:h-[110vh] bg-black">
       <div className="relative h-full flex flex-col lg:justify-center pt-48">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
