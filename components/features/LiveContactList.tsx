@@ -19,7 +19,7 @@ export function LiveContactList() {
           </div>
 
           {/* Mobile Title - Above Phone */}
-          <div className="block lg:hidden text-white text-center mb-8">
+          <div className="block lg:hidden text-white text-center mb-8 mt-12 sm:mt-0">
             <h2 className="text-[6.7vw] font-bold leading-none">
               LIVE
               <p className="block text-[13.125vw] sm:text-[13.125vw] text-white leading-none tracking-tight m-0 p-0">
