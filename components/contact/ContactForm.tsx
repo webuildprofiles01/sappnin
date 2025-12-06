@@ -66,9 +66,9 @@ export function ContactForm() {
   }
 
   return (
-    <div className="max-w-[37.21vw] h-[auto] mx-auto w-full border-2 border-white rounded-2xl">
-      <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
-        <h2 className="text-[3.06vw] font-bold mb-4 text-center text-white">
+    <div className="max-w-[90vw] sm:max-w-[37.21vw] h-[auto] mx-auto w-full border-0 sm:border-2 sm:border-white rounded-2xl">
+      <div className="bg-transparent sm:bg-black/40 backdrop-blur-none sm:backdrop-blur-sm rounded-2xl p-0 sm:p-8 border-none sm:border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+        <h2 className="text-[6.33vw] sm:text-[3.06vw] font-bold mb-4 text-center text-white">
           CONTACT US
         </h2>
 
@@ -85,35 +85,35 @@ export function ContactForm() {
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* First Name */}
           <div className="space-y-1">
-            <label htmlFor="firstName" className="block text-white/80 text-[0.9vw] font-medium">First Name</label>
+            <label htmlFor="firstName" className="hidden sm:block text-white/80 sm:text-[0.9vw] font-medium">First Name</label>
             <Input
               id="firstName"
               name="firstName"
               placeholder="Enter your first name"
               value={formData.firstName}
               onChange={handleChange}
-              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 placeholder-text-[2.32vw] sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
 
           {/* Last Name */}
           <div className="space-y-1">
-            <label htmlFor="lastName" className="block text-white/80 text-[0.9vw] font-medium">Last Name</label>
+            <label htmlFor="lastName" className="hidden sm:block text-white/80 text-[0.9vw] font-medium">Last Name</label>
             <Input
               id="lastName"
               name="lastName"
               placeholder="Enter your last name"
               value={formData.lastName}
               onChange={handleChange}
-              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 placeholder-text-[2.32vw] sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
 
           {/* Email */}
           <div className="space-y-1">
-            <label htmlFor="email" className="block text-white/80 text-[0.9vw] font-medium">Your Email</label>
+            <label htmlFor="email" className="hidden sm:block text-white/80 text-[0.9vw] font-medium">Your Email</label>
             <Input
               id="email"
               name="email"
@@ -121,26 +121,26 @@ export function ContactForm() {
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
-              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 placeholder-text-[2.32vw] sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
 
           {/* Message */}
           <div className="space-y-1">
-            <label htmlFor="message" className="block text-white/80 text-[0.9vw] font-medium">Message</label>
+            <label htmlFor="message" className="hidden sm:block text-white/80 text-[0.9vw] font-medium">Message</label>
             <Textarea
               id="message"
               name="message"
               placeholder="Write your Message"
               value={formData.message}
               onChange={handleChange}
-              className="bg-white border-0 rounded-lg p-3 min-h-[100px] text-black placeholder:text-gray-500 placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-lg p-3 min-h-[100px] text-black placeholder:text-gray-500 placeholder-text-[2.32vw] sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
 
-          <div className="flex justify-left w-full pt-2">
+          <div className="flex justify-center sm:justify-start w-full pt-2">
             <Button
               type="submit"
               disabled={isSubmitting}

@@ -1,5 +1,5 @@
-import { ContactForm } from "@/components/contact/ContactForm"
-import Image from "next/image"
+import { ContactForm } from "@/components/contact/ContactForm";
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
@@ -28,16 +28,23 @@ export default function ContactPage() {
             />
           </div>
           {/* Dark overlay for mobile */}
-          <div className="absolute inset-0 bg-black/60 sm:hidden" />
+          {/* <div className="absolute inset-0 bg-black/0 sm:bg-black/60 sm:hidden" /> */}
         </div>
 
         {/* Form Container */}
-        <div className="relative z-10 flex items-start sm:items-center sm:justify-end max-w-[75rem]">
+        <div className="hidden sm:flex relative z-10 items-start sm:items-center sm:justify-end max-w-[75rem]">
           <div className="w-full bg-transparent sm:bg-transparent lg:w-1/2 px-6 py-0 sm:px-4 lg:px-12">
             <ContactForm />
           </div>
         </div>
+
+        {/* Form Container Mobile */}
+        <div>
+          <div className="flex sm:hidden relative z-10 justify-center max-w-[75rem] px-2 mt-24">
+              <ContactForm />
+          </div>
+        </div>
       </div>
     </section>
-  )
-} 
+  );
+}
