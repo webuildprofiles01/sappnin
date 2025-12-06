@@ -48,16 +48,18 @@ export function Header() {
         (isHome || isContact) ? "bg-transparent" : "bg-white"
       }`}>
         <Container>
-          <div className="flex items-center justify-around transition-all duration-300">
+          <div className="flex items-center justify-between sm:justify-center transition-all duration-300">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
-              <Image
+              <div className="w-[9.69vw] aspect-square relative">
+                <Image
                 src="/images/logos/sappnin-logo.png"
                 alt="Sappnin"
                 width={150}
                 height={150}
                 className="hidden sm:block w-[120px] sm:w-[160px]"
               />
+              </div>
               <Image
                 src="/images/logos/logo-mobile.png"
                 alt="Sappnin"
@@ -68,7 +70,7 @@ export function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex flex-1 justify-start ml-20">
+            <nav className="hidden md:flex flex-1 justify-start ml-20 max-w-[65%]">
               <ul className="flex items-start gap-16">
                 {navigation.map((item) => (
                   <li key={item.name}>
