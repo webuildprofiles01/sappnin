@@ -27,7 +27,7 @@ export function Hero() {
         />
       </div>
 
-      <Container className="relative z-10 h-[115vh] flex flex-col justify-end pb-12">
+      <Container className="relative z-10 h-[100vh] sm:h-[115vh] flex flex-col justify-end pb-12">
         <div className="flex flex-col items-center justify-end w-full">
           {/* Main Title */}
           <h1 className="font-extrabold leading-none text-[19.31vw] sm:text-[16.49vw] md:text-[16.49vw] lg:text-[16.49vw] xl:text-[16.49vw] pt-0 text-brand-orange text-center">

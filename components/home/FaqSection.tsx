@@ -40,7 +40,7 @@ export function FaqSection() {
   return (
     <section className="py-20 bg-white">
       <Container>
-        <h2 className="text-center text-6xl font-bold text-brand-orange mb-16">
+        <h2 className="text-center text-[16.94vw] sm:text-[10.64vw] font-bold text-brand-orange mb-8 sm:mb-16">
           FAQs
         </h2>
 

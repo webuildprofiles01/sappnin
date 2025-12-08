@@ -74,13 +74,13 @@ export function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex flex-1 justify-start ml-20 max-w-[65%]">
+            <nav className="hidden md:flex flex-1 justify-center ml-20 max-w-[65%]">
               <ul className="flex items-start gap-16">
                 {navigation.map((item) => (
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className={`text-[2.03vw] font-medium hover:text-brand-orange transition-colors ${
+                      className={`text-[1.5vw] font-medium hover:text-brand-orange focus:font-bold transition-colors ${
                         item.href === pathname
                           ? "text-brand-orange border-b-2 border-brand-orange pb-1"
                           : isHome || isContact
