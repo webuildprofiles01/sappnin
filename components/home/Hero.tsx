@@ -9,7 +9,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         {/* Desktop Image */}
         <Image
-          src="/images/hero/couple.png"
+          src="/images/hero/couple.webp"
           alt="Happy couple"
           fill
           className="hidden sm:block object-cover object-[center_15%]"
@@ -18,7 +18,7 @@ export function Hero() {
         />
         {/* Mobile Image */}
         <Image
-          src="/images/hero/couple-mobile.png"
+          src="/images/hero/couple-mobile.webp"
           alt="Happy couple"
           fill
           className="block sm:hidden object-cover"

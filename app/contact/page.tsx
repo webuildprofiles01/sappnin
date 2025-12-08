@@ -10,7 +10,7 @@ export default function ContactPage() {
           {/* Mobile Image */}
           <div className="relative block sm:hidden w-full aspect-square">
             <Image
-              src="/images/contact/happy-couple-mobile.png"
+              src="/images/contact/happy-couple-mobile.webp"
               alt="Happy couple"
               fill
               className="object-cover object-[center_30%]"
@@ -20,7 +20,7 @@ export default function ContactPage() {
           {/* Desktop Image */}
           <div className="relative hidden sm:block h-full">
             <Image
-              src="/images/contact/happy-couple.png"
+              src="/images/contact/happy-couple.webp"
               alt="Happy couple"
               fill
               className="object-cover"

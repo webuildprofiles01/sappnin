@@ -49,7 +49,7 @@ export default function DownloadPage() {
               <div className="relative w-full mx-auto max-w-[43.18vw] sm:max-w-[29.44vw] h-auto">
                 <div className="relative h-[80.45vw] sm:h-[41vw]">
                   <Image
-                    src="/images/download/profile-card.png"
+                    src="/images/download/profile-card.webp"
                     alt="Sappnin App"
                     fill
                     className="object-contain"

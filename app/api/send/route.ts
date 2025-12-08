@@ -1,5 +1,7 @@
-import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { NextResponse } from "next/server";
+import fs from "fs";
+import path from "path";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -7,51 +9,28 @@ export async function POST(req: Request) {
   try {
     const { firstName, lastName, email, message } = await req.json();
 
-    if (!firstName || !lastName || !email || !message) {
-      return NextResponse.json(
-        { success: false, message: "All fields are required." },
-        { status: 400 }
-      );
-    }
+    // Load HTML template file
+    const templatePath = path.join(process.cwd(), "emails", "contact-template.html");
+    let html = fs.readFileSync(templatePath, "utf8");
 
-    const htmlContent = `
-      <h2>New Contact Form Submission</h2>
-      <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Message:</strong></p>
-      <p>${message}</p>
-    `;
+    // Replace placeholders with actual data
+    html = html
+      .replace("{{firstName}}", firstName)
+      .replace("{{lastName}}", lastName)
+      .replace("{{email}}", email)
+      .replace("{{message}}", message);
 
-    const data = await resend.emails.send({
-      from: process.env.FROM_EMAIL as string,
+    // Send the email
+    await resend.emails.send({
+      from: "onboarding@resend.dev",
       to: email,
-      subject: `Contact Form Submission from ${firstName} ${lastName}`,
-      // reply_to: email,
-      html: htmlContent,
-      text: `
-        Name: ${firstName} ${lastName}
-        Email: ${email}
-        Message: ${message}
-      `,
+      subject: `Sappnin Contact Form Submission`,
+      html,
     });
 
-    if (data.error) {
-      console.error("Resend Error:", data.error);
-      return NextResponse.json(
-        { success: false, message: "Failed to send email." },
-        { status: 500 }
-      );
-    }
-
-    return NextResponse.json(
-      { success: true, message: "Email sent successfully!" },
-      { status: 200 }
-    );
+    return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("API Error:", error);
-    return NextResponse.json(
-      { success: false, message: "Server error." },
-      { status: 500 }
-    );
+    console.error(error);
+    return NextResponse.json({ success: false, error });
   }
 }
