@@ -1,119 +1,142 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
-    message: ""
-  })
-  
-  const [isSubmitting, setIsSubmitting] = useState(false)
+    message: "",
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
     success?: boolean;
     message?: string;
-  }>({})
+  }>({});
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
-    try {
-      const response = await fetch('https://send.propertyappstore.com/send/sappnin', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          to: 'support@sappnin.io', 
-          subject: `Contact Form Submission from ${formData.firstName} ${formData.lastName}`,
-          text: `Name: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
-          html: `
-            <h2>New Contact Form Submission</h2>
-            <p><strong>Name:</strong> ${formData.firstName} ${formData.lastName}</p>
-            <p><strong>Email:</strong> ${formData.email}</p>
-            <p><strong>Message:</strong> ${formData.message}</p>
-          `
-        }),
-      })
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({});
 
-      const result = await response.json()
-      
-      if (result.success) {
-        setSubmitStatus({ success: true, message: "Thank you! Your message has been sent." })
-        // Reset form after successful submission
-        setFormData({ firstName: '', lastName: '', email: '', message: '' })
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setSubmitStatus({
+          success: true,
+          message: "Thank you! Your message has been sent.",
+        });
+
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          message: "",
+        });
       } else {
-        setSubmitStatus({ success: false, message: "Failed to send message. Please try again." })
+        setSubmitStatus({
+          success: false,
+          message: "Failed to send message. Please try again.",
+        });
       }
-    } catch {
-      setSubmitStatus({ success: false, message: "An error occurred. Please try again later." })
+    } catch (error) {
+      setSubmitStatus({
+        success: false,
+        message: "An error occurred. Please try again later.",
+      });
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
-  }
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target
-    setFormData(prev => ({ ...prev, [name]: value }))
-  }
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   return (
-    <div className="max-w-[90vw] sm:max-w-[37.21vw] h-[auto] mx-auto w-full border-0 sm:border-2 sm:border-white rounded-2xl">
-      <div className="bg-transparent sm:bg-black/40 backdrop-blur-none sm:backdrop-blur-sm rounded-2xl p-0 sm:p-8 border-none sm:border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+    <div className="max-w-[90vw] sm:max-w-[37.21vw] mx-auto w-full border-0 sm:border-2 sm:border-white rounded-2xl">
+      <div className="bg-transparent sm:bg-black/40 sm:backdrop-blur-sm rounded-2xl p-0 sm:p-8 border-none sm:border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+        
         <h2 className="text-[6.33vw] sm:text-[3.06vw] font-bold mb-4 text-center text-white">
           CONTACT US
         </h2>
 
         {submitStatus.message && (
-          <div className={`mb-6 p-4 rounded-lg text-center ${
-            submitStatus.success 
-              ? 'bg-green-100 text-green-800 border border-green-200' 
-              : 'bg-red-100 text-red-800 border border-red-200'
-          }`}>
+          <div
+            className={`mb-6 p-4 rounded-lg text-center ${
+              submitStatus.success
+                ? "bg-green-100 text-green-800 border border-green-200"
+                : "bg-red-100 text-red-800 border border-red-200"
+            }`}
+          >
             {submitStatus.message}
           </div>
         )}
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          {/* First Name */}
+          {/* FIRST NAME */}
           <div className="space-y-1">
-            <label htmlFor="firstName" className="hidden sm:block text-white/80 sm:text-[0.9vw] font-medium">First Name</label>
+            <label
+              htmlFor="firstName"
+              className="hidden sm:block text-white/80 sm:text-[0.9vw] font-medium"
+            >
+              First Name
+            </label>
             <Input
               id="firstName"
               name="firstName"
               placeholder="Enter your first name"
               value={formData.firstName}
               onChange={handleChange}
-              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 placeholder-text-[2.32vw] sm:placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
 
-          {/* Last Name */}
+          {/* LAST NAME */}
           <div className="space-y-1">
-            <label htmlFor="lastName" className="hidden sm:block text-white/80 text-[0.9vw] font-medium">Last Name</label>
+            <label
+              htmlFor="lastName"
+              className="hidden sm:block text-white/80 sm:text-[0.9vw] font-medium"
+            >
+              Last Name
+            </label>
             <Input
               id="lastName"
               name="lastName"
               placeholder="Enter your last name"
               value={formData.lastName}
               onChange={handleChange}
-              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 placeholder-text-[2.32vw] sm:placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
 
-          {/* Email */}
+          {/* EMAIL */}
           <div className="space-y-1">
-            <label htmlFor="email" className="hidden sm:block text-white/80 text-[0.9vw] font-medium">Your Email</label>
+            <label
+              htmlFor="email"
+              className="hidden sm:block text-white/80 sm:text-[0.9vw] font-medium"
+            >
+              Your Email
+            </label>
             <Input
               id="email"
               name="email"
@@ -121,36 +144,42 @@ export function ContactForm() {
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
-              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 placeholder-text-[2.32vw] sm:placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
 
-          {/* Message */}
+          {/* MESSAGE */}
           <div className="space-y-1">
-            <label htmlFor="message" className="hidden sm:block text-white/80 text-[0.9vw] font-medium">Message</label>
+            <label
+              htmlFor="message"
+              className="hidden sm:block text-white/80 sm:text-[0.9vw] font-medium"
+            >
+              Message
+            </label>
             <Textarea
               id="message"
               name="message"
-              placeholder="Write your Message"
+              placeholder="Write your message"
               value={formData.message}
               onChange={handleChange}
-              className="bg-white border-0 rounded-lg p-3 min-h-[100px] text-black placeholder:text-gray-500 placeholder-text-[2.32vw] sm:placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-lg p-3 min-h-[100px] text-black placeholder:text-gray-500 sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
 
+          {/* BUTTON */}
           <div className="flex justify-center sm:justify-start w-full pt-2">
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="bg-brand-orange hover:bg-brand-orange/90 disabled:bg-brand-orange/50 text-white py-3 px-6 rounded-lg text-base uppercase rounded-full"
+              className="bg-brand-orange hover:bg-brand-orange/90 disabled:bg-brand-orange/50 text-white py-3 px-6 rounded-full uppercase"
             >
-              {isSubmitting ? 'SENDING...' : 'SEND MESSAGE'}
+              {isSubmitting ? "SENDING..." : "SEND MESSAGE"}
             </Button>
           </div>
         </form>
       </div>
     </div>
-  )
-} 
+  );
+}
