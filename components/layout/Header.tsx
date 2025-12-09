@@ -49,8 +49,8 @@ export function Header() {
           isHome || isContact ? "bg-transparent" : "bg-white"
         }`}
       >
-        <Container>
-          <div className="flex items-center justify-between sm:justify-center transition-all duration-300">
+        <div>
+          <div className="px-2 flex items-center justify-between sm:justify-center transition-all duration-300">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
               <div className="hidden sm:block w-[9.69vw] aspect-square relative">
@@ -111,7 +111,7 @@ export function Header() {
               />
             </button>
           </div>
-        </Container>
+        </div>
       </header>
 
       {/* Mobile Menu Overlay */}

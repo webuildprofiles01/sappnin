@@ -95,10 +95,10 @@ export function ImageSlider() {
   }, [emblaApi, onSelect])
 
   return (
-    <section className="py-12 sm:pt-60 sm:pb-30 bg-white">
-      <Container>
+    <section className="py-12 sm:pt-[20rem] sm:pb-30 bg-white">
+      {/* <Container> */}
         {/* Heading */}
-        <div className="text-center mb-8 mt-8 sm:mb-16 sm:mt-0">
+        <div className="text-center mb-8 mt-8 sm:mb-16 sm:mt-0 max-w-full">
           <h2 className="text-[7.58vw] sm:text-[7.58vw] md:text-[7.8vw] lg:text-[7.8vw] font-extrabold leading-none">
             REAL PEOPLE
           </h2>
@@ -108,15 +108,15 @@ export function ImageSlider() {
         </div>
 
                   {/* Desktop Grid */}
-          <div className="hidden lg:grid grid-cols-4 gap-6 max-w-[1400px] mx-auto">
+          <div className="hidden lg:grid grid-cols-4 gap-0 max-w-full">
             {slides.map((slide) => (
-              <div key={slide.id} className="relative aspect-[4/5] w-[58.86vw] md:w-[23.90vw] rounded-3xl overflow-hidden">
+              <div key={slide.id} className="relative aspect-[4/5] w-[58.86vw] md:w-[24.90vw] rounded-2xl overflow-hidden">
                 <Image
                   src={slide.image.desktop}
                   alt={slide.alt}
                   fill
                   className="object-contain object-center"
-                  sizes="(min-width: 1024px) 25vw, 100vw"
+                  // sizes="(min-width: 1024px) 25vw, 100vw"
                 />
               </div>
             ))}
@@ -143,7 +143,7 @@ export function ImageSlider() {
               <ChevronRight className="h-6 w-6 sm:h-8 sm:w-8" />
             </Button>
 
-            {/* Carousel Viewport */}
+            {/* Carousel Viewport Mobile*/}
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex">
                 {slides.map((slide) => (
@@ -182,7 +182,7 @@ export function ImageSlider() {
               />
             ))}
           </div>
-      </Container>
+      {/* </Container> */}
     </section>
   )
 } 

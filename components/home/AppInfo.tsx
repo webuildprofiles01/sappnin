@@ -1,22 +1,22 @@
-import Image from "next/image"
-import { Container } from "@/components/shared/Container"
+import Image from "next/image";
+import { Container } from "@/components/shared/Container";
 
 export function AppInfo() {
   return (
-    <section className="bg-brand-orange py-12 sm:pt-20 overflow-visible">
+    <section className="bg-brand-orange py-12 sm:pt-20 overflow-visible gap-4">
       {/* Text Content - Inside Container */}
-      <Container>
-        <div className="text-center text-white mb-4 sm:mb-16">
-          <h2 className="text-[11.89vw] sm:text-[11.89vw] md:text-[10.31vw] lg:text-[10.31vw] font-extrabold mb-2 sm:mb-2 text-white leading-none">
-            SPONTANEITY
-          </h2>
-          <p className="text-[4.55vw] sm:text-[4.55vw] md:text-[3.95vw] lg:text-[3.95vw] font-medium leading-none">
-            IS THE BEST TYPE OF ADVENTURE
-          </p>
-        </div>
+      {/* <div className="h-[110vh]"> */}
+      <div className="text-center text-white mb-4 sm:mb-16">
+        <h2 className="text-[11.89vw] sm:text-[11.89vw] md:text-[10.31vw] lg:text-[10.31vw] font-extrabold mb-2 sm:mb-2 text-white leading-none">
+          SPONTANEITY
+        </h2>
+        <p className="text-[4.55vw] sm:text-[4.55vw] md:text-[3.95vw] lg:text-[3.95vw] font-medium leading-none">
+          IS THE BEST TYPE OF ADVENTURE
+        </p>
+      </div>
 
-        {/* Mobile Layout - Only Phone */}
-        {/* <div className="block sm:hidden relative h-[300px]">
+      {/* Mobile Layout - Only Phone */}
+      {/* <div className="block sm:hidden relative h-[300px]">
           <Image
             src="/images/features/phone-mockup.png"
             alt="Sappnin App"
@@ -26,68 +26,77 @@ export function AppInfo() {
           />
         </div> */}
 
-        {/* Desktop Layout */}
-        <div className="hidden sm:block relative h-[300px] sm:min-h-[600px]">
-          {/* W Logo - Desktop Only */}
-          <div className="hidden sm:block absolute -left-[10%] -bottom-[21%]">
-            <Image
-              src="/images/logos/app-icon.png"
-              alt="Sappnin W"
-              width={0}
-              height={0}
-              sizes="34.339vw"
-              style={{ width: '34.339vw', height: 'auto' }}
-              className="opacity-100"
-            />
-          </div>
-          
-          {/* Phone Mockup */}
-          <div className="absolute right-0 -bottom-[45%] w-2/3">
-            <div className="relative right[30%]">
-              <Image
-                src="/images/features/phone-mockup.png"
-                alt="Sappnin App"
-                className="object-contain object-right-bottom"
-                style={{ width: '35.66vw', height: 'auto' }}
-                width={300}
-                height={100}
-                // priority
-              />
-            </div>
-          </div>
+      {/* Desktop Layout */}
+      <div className="hidden sm:block relative h-[300px] sm:min-h-[600px]">
+        {/* W Logo - Desktop Only */}
+        <div className="hidden sm:block absolute -left-[5%] -bottom-[30%]">
+          <Image
+            src="/images/logos/app-icon.png"
+            alt="Sappnin W"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="
+            object-contain
+            opacity-100 
+            w-[34.339vw]        /* default */
+            md:w-[34.339vw]     /* medium screens */
+            lg:w-[34.339vw]     /* large screens */
+            xl:w-[34.339vw]     /* extra-large screens */
+            h-[100vh]
+          "
+          />
         </div>
 
-        {/* Mobile Layout - Only Phone */}
-        <div className="block sm:hidden relative h-[400px]">
-          <div className="absolute -left-[20%] -bottom-[21%] w-[48.47vw] aspect-[1.94/3]">
+        {/* Phone Mockup */}
+        <div className="absolute top-[10%] right-0 -bottom-[45%] lg:bottom-[10%] w-2/3">
+          <div className="relative right[30%]">
             <Image
-              src="/images/logos/app-icon.png"
-              alt="Sappnin W"
+              src="/images/features/phone-mockup.png"
+              alt="Sappnin App"
+              className="
+              object-contain 
+              object-right-bottom
+              w-[35.66vw]      /* default */
+              sm:w-[35.66vw]
+              md:w-[35.66vw]
+              lg:w-[35.66vw]
+              xl:w-[35.66vw]
+              h-[120vh]
+            "
+              width={300}
+              height={100}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Layout - Only Phone */}
+      <div className="block sm:hidden relative h-[400px]">
+        <div className="absolute -left-[20%] -bottom-[21%] w-[48.47vw] aspect-[1.94/3]">
+          <Image
+            src="/images/logos/app-icon.png"
+            alt="Sappnin W"
+            fill
+            className="opacity-100"
+          />
+        </div>
+
+        {/* Phone Mockup */}
+        <div className="absolute right-[5%] -bottom-[25%] w-3/4">
+          <div className="relative h-[500px]">
+            <Image
+              src="/images/features/phone-mockup.png"
+              alt="Sappnin App"
               fill
-              className="opacity-100"
+              className="object-contain object-right-bottom"
+              priority
             />
           </div>
-          
-          {/* Phone Mockup */}
-          <div className="absolute right-[5%] -bottom-[25%] w-3/4">
-            <div className="relative h-[500px]">
-              <Image
-                src="/images/features/phone-mockup.png"
-                alt="Sappnin App"
-                fill
-                className="object-contain object-right-bottom"
-                priority
-              />
-            </div>
-          </div>
-
-
-
         </div>
+      </div>
 
-
-        
-      </Container>
+      {/* </div> */}
     </section>
-  )
-} 
+  );
+}

@@ -47,7 +47,7 @@ const features: Feature[] = [
 export function WhySection() {
   return (
     <section className="py-12 sm:py-20 bg-white">
-      <Container>
+      <div>
         {/* Heading */}
         <h2 className="text-center text-[8.05vw] md:text-[7.41vw] lg:text-[7.41vw] font-extrabold mb-16 sm:mb-20 px-2 leading-none">
           <span className="text-black">WHY </span>
@@ -58,7 +58,8 @@ export function WhySection() {
         </h2>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-6 sm:gap-12 max-w-6xl mx-auto">
+        <Container>
+        <div className="grid md:grid-cols-3 gap-6 sm:gap-6 lg:gap-12 max-w-4xl xl:max-w-full mx-auto">
           {features.map((feature) => (
             <div key={feature.id} className="flex flex-col justify-start">
               {/* Responsive Image Card */}
@@ -102,13 +103,14 @@ export function WhySection() {
               </div>
 
               {/* Title */}
-              <h3 className="text-[4.36vw] md:text-[2.08vw] lg:text-[2.08vw] xl:text-[2.08vw] max-w-[215px] md:max-w-none font-semibold text-center px-2 mt-2 self-center">
+              <h3 className="text-[4.36vw] md:text-[2.08vw] lg:text-[2.08vw] xl:text-[2.08vw] max-w-[215px] md:max-w-[25vw] font-semibold text-center px-2 mt-2 self-center">
                 {feature.title}
               </h3>
             </div>
           ))}
         </div>
-      </Container>
+          </Container>
+      </div>
     </section>
   )
 }
