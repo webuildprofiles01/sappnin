@@ -27,9 +27,9 @@ export function AppInfo() {
         </div> */}
 
       {/* Desktop Layout */}
-      <div className="hidden sm:block relative h-[300px] sm:min-h-[600px]">
+      <div className="hidden sm:block relative ">
         {/* W Logo - Desktop Only */}
-        <div className="hidden sm:block absolute -left-[5%] -bottom-[30%]">
+        <div className="hidden sm:block relative transform translate-y-[30%] translate-x-[-10%]">
           <Image
             src="/images/logos/app-icon.png"
             alt="Sappnin W"
@@ -37,13 +37,9 @@ export function AppInfo() {
             height={0}
             sizes="100vw"
             className="
-            object-contain
-            opacity-100 
-            w-[34.339vw]        /* default */
-            md:w-[34.339vw]     /* medium screens */
-            lg:w-[34.339vw]     /* large screens */
-            xl:w-[34.339vw]     /* extra-large screens */
-            h-[100vh]
+            object-contain 
+            w-[34.339vw]
+            h-[auto]
           "
           />
         </div>
@@ -54,18 +50,17 @@ export function AppInfo() {
             <Image
               src="/images/features/phone-mockup.png"
               alt="Sappnin App"
+              sizes="100vw"
               className="
               object-contain 
               object-right-bottom
-              w-[35.66vw]      /* default */
-              sm:w-[35.66vw]
-              md:w-[35.66vw]
-              lg:w-[35.66vw]
-              xl:w-[35.66vw]
-              h-[120vh]
+              w-[36.45vw]      /* default */
+              md:w-[28.22vw]  /* md screens */
+              lg:w-[36.45vw]  /* md screens */
+              h-[auto]
             "
-              width={300}
-              height={100}
+              width={0}
+              height={0}
             />
           </div>
         </div>
