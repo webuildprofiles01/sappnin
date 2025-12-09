@@ -1,6 +1,5 @@
 import { ContactForm } from "@/components/contact/ContactForm";
 import Image from "next/image";
-
 export default function ContactPage() {
   return (
     <section className="h-auto sm:h-[110vh] bg-black">
