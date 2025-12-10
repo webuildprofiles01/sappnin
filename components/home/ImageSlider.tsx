@@ -96,7 +96,7 @@ export function ImageSlider() {
 
   return (
     <section className="py-12 sm:pt-[20rem] sm:pb-30 bg-white">
-      {/* <Container> */}
+      <Container>
         {/* Heading */}
         <div className="text-center mb-8 mt-8 sm:mb-16 sm:mt-0 max-w-full">
           <h2 className="text-[7.58vw] sm:text-[7.58vw] md:text-[7.8vw] lg:text-[7.8vw] font-extrabold leading-none">
@@ -108,7 +108,7 @@ export function ImageSlider() {
         </div>
 
                   {/* Desktop Grid */}
-          <div className="hidden lg:grid grid-cols-4 gap-0 max-w-full">
+          <div className="hidden sm:grid grid-cols-4 gap-0 max-w-full">
             {slides.map((slide) => (
               <div key={slide.id} className="relative aspect-[4/5] w-[58.86vw] md:w-[24.90vw] rounded-2xl overflow-hidden">
                 <Image
@@ -123,7 +123,7 @@ export function ImageSlider() {
           </div>
 
           {/* Tablet/Mobile Carousel */}
-          <div className="lg:hidden relative max-w-[1200px] mx-auto mb-6 sm:mb-0">
+          <div className="sm:hidden relative max-w-[1200px] mx-auto mb-6 sm:mb-0">
             {/* Navigation Buttons */}
             <Button
               variant="ghost"
@@ -182,7 +182,7 @@ export function ImageSlider() {
               />
             ))}
           </div>
-      {/* </Container> */}
+      </Container>
     </section>
   )
 } 
