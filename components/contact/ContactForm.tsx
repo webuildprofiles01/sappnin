@@ -97,7 +97,7 @@ export function ContactForm() {
               placeholder="Enter your first name"
               value={formData.firstName}
               onChange={handleChange}
-              className="bg-white border-0 rounded-[5.12px] sm:rounded-lg p-3 text-black placeholder:text-gray-350 placeholder:text-[2.52vw] sm:placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-[5.12px] sm:rounded-lg px-[2vw] sm:px-[1vw] py-[4.5vw] sm:py-[1.5vw] text-black placeholder:text-gray-350 placeholder:text-[2.52vw] sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
@@ -115,7 +115,7 @@ export function ContactForm() {
               placeholder="Enter your last name"
               value={formData.lastName}
               onChange={handleChange}
-              className="bg-white border-0 rounded-[5.12px] sm:rounded-lg p-3 text-black placeholder:text-gray-350 placeholder:text-[2.52vw] sm:placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-[5.12px] sm:rounded-lg px-[2vw] sm:px-[1vw] py-[4.5vw] sm:py-[1.5vw] text-black placeholder:text-gray-350 placeholder:text-[2.52vw] sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
@@ -135,7 +135,7 @@ export function ContactForm() {
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
-              className="bg-white border-0 rounded-[5.12px] sm:rounded-lg p-3 text-black placeholder:text-gray-350 placeholder:text-[2.52vw] sm:placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-[5.12px] sm:rounded-lg px-[2vw] sm:px-[1vw] py-[4.5vw] sm:py-[1.5vw] text-black placeholder:text-gray-350 placeholder:text-[2.52vw] sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
@@ -153,7 +153,7 @@ export function ContactForm() {
               placeholder="Write your Message"
               value={formData.message}
               onChange={handleChange}
-              className="bg-white border-0 rounded-[5.12px] sm:rounded-lg p-3 min-h-[100px] text-black placeholder:text-gray-350 placeholder:text-[2.52vw] sm:placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-[5.12px] sm:rounded-lg px-[2vw] sm:px-[1vw] py-[4.5vw] sm:py-[1.5vw] min-h-[150px] sm:min-h-[100px] text-black placeholder:text-gray-350 placeholder:text-[2.52vw] sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
