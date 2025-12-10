@@ -4,16 +4,17 @@ import { Container } from "@/components/shared/Container"
 export function LiveContactList() {
   return (
     <section className="bg-brand-orange py-12 overflow-visible">
-      <Container>
+      <div>
         <div className="relative min-h-[600px] overflow-visible">
           {/* Large W Logo Desktop */}
           <div className="absolute -left-[5vw] -bottom-[20%] hidden sm:block">
             <Image
               src="/images/logos/app-icon.png"
               alt="Sappnin W"
-              width={400}
-              height={600}
-              className="opacity-100"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="opacity-100 w-[40.11vw] h-auto"
               priority
             />
           </div>
@@ -31,27 +32,30 @@ export function LiveContactList() {
           </div>
 
           {/* Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-6 lg:gap-0 items-center relative z-10">
+          <div className="grid lg:grid-cols-2 gap-3 lg:gap-0 items-center relative z-10">
             {/* Phone Image */}
             <div className="relative w-full max-w-md lg:max-w-none mx-auto">
-              <div className="relative h-[400px] lg:h-[800px] z-10">
+              <div className="relative z-10">
                 <Image
                   src="/images/features/2.png"
                   alt="Live Contact List"
-                  fill
-                  className="object-contain"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="object-contain w-[49.71vw] sm:w-[36.71vw] h-auto mx-auto"
                   priority
                 />
               </div>
               
               {/* Large W Logo Mobile - Positioned next to phone */}
-              <div className="absolute -bottom-[0%] -left-[20%] block sm:hidden">
+              <div className="absolute -bottom-[0%] -left-[10%] block sm:hidden">
                 <Image
                   src="/images/logos/app-icon.png"
                   alt="Sappnin W"
-                  width={200}
-                  height={300}
-                  className="opacity-100"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="opacity-100 w-[45.11vw] h-auto"
                   priority
                 />
               </div>
@@ -84,7 +88,7 @@ export function LiveContactList() {
             </p>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   )
 } 

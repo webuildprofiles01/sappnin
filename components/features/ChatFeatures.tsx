@@ -3,7 +3,7 @@ import { Container } from "@/components/shared/Container"
 
 export function ChatFeatures() {
   return (
-    <section className="bg-brand-orange pt-12 lg:pt-20 w-screen overflow-visible mt-[0px] sm:mt-[-120px] gap-0">
+    <section className="bg-brand-orange pt-12 lg:pt-20 w-screen overflow-visible mt-[0px] sm:mt-[-10vw] gap-0">
       <Container >
         {/* Real-time Chat */}
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-0 items-center mb-5 sm:mb-20 px-5 sm:px-20">
@@ -37,13 +37,15 @@ export function ChatFeatures() {
           {/* Phone Image */}
           <div className="flex justify-center w-full">
             <div className="relative w-full max-w-md lg:max-w-none mx-auto">
-              <div className="relative h-[471.92px] sm:h-[600px] lg:h-[800px]">
+              <div className="relative">
                 <Image
                   src="/images/features/real-time-chat.png"
                   alt="Real-time Chat"
-                  fill
-                  className="object-contain object-center"
+                  sizes="100vw"
+                  className="object-contain object-center w-[49.71vw] sm:w-[36.71vw] h-auto mx-auto"
                   priority
+                  width={0}
+                  height={0}
                 />
               </div>
             </div>
@@ -76,12 +78,14 @@ export function ChatFeatures() {
           {/* Phone Image - Left Side */}
           <div className="flex justify-center w-full order-2 lg:order-1">
             <div className="relative w-full max-w-md lg:max-w-none mx-auto">
-              <div className="relative h-[471.92px] sm:h-[600px] lg:h-[800px]">
+              <div className="relative">
                 <Image
                   src="/images/features/disappearing-chat.png"
                   alt="Disappearing Chat"
-                  fill
-                  className="object-contain"
+                  sizes="100vw"
+                  width={0}
+                  height={0}
+                  className="object-contain object-center w-[59.71vw] sm:w-[49.71vw] h-auto mx-auto"
                   priority
                 />
               </div>

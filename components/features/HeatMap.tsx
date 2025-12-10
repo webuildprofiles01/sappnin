@@ -3,7 +3,7 @@ import { Container } from "@/components/shared/Container"
 
 export function HeatMap() {
   return (
-    <section className="bg-brand-orange pt-[110px] px-2 sm:px-10">
+    <section className="bg-brand-orange pt-[10vw] px-2 sm:px-10">
       <Container>
         <div className="grid lg:grid-cols-2 items-top">
           {/* Text Content */}
@@ -23,12 +23,14 @@ export function HeatMap() {
 
           {/* Phone Image */}
           <div className="relative w-full max-w-md lg:max-w-[38vw] mx-auto my-5  sm:my-0">
-            <div className="relative h-[400.65px] sm:h-[600px] lg:h-[800px]">
+            <div className="relative">
               <Image
                 src="/images/features/1.png"
                 alt="Sappnin Heat Map"
-                fill
-                className="object-contain"
+                sizes="100vw"
+                width={0}
+                height={0}
+                className="object-contain w-[47.98vw] sm:w-[30.98vw] h-auto mx-auto"
                 priority
               />
             </div>
