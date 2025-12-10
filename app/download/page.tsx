@@ -11,13 +11,15 @@ export default function DownloadPage() {
             {/* Left Side - Content */}
             <div className="flex flex-col items-center justify-center text-white order-2 lg:order-1">
               {/* Logo */}
-              <div className="relative w-[19.99vw] h-[auto] sm:w-[12vw] sm:h-[12vw] mb-2 mt-2 sm:mt-0 sm:mb-2">
+              <div className="relative mb-2 mt-2 sm:mt-0 sm:mb-2">
                 <Image
                   src="/images/logos/app-icon.png"
                   alt="Sappnin Logo"
-                  fill
+                  sizes="100vw"
+                  width={0}
+                  height={0}
                   priority
-                  className="object-contain"
+                  className="object-contain w-[19.99vw] h-[auto] sm:w-[12vw] sm:h-[12vw]"
                 />
               </div>
 

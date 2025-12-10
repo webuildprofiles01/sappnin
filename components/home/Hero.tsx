@@ -34,7 +34,7 @@ export function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-[3.14vw] sm:text-[2.14vw] font-medium sm:mb-5 text-white tracking-wide max-w-full text-center">
+          <p className="text-[3.14vw] sm:text-[2.14vw] font-medium sm:mb-5 text-white tracking-wide max-w-[90vw] sm:max-w-full text-center">
             CREATING SPONTANEOUS MEETUPS WITH INDIVIDUALS AND SOCIAL GROUPS
           </p>
 
