@@ -19,7 +19,7 @@ export function CtaSection() {
           </div>
 
           {/* Download Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center">
             <DownloadButtons />
           </div>
         </div>

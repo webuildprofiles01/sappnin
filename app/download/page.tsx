@@ -6,12 +6,12 @@ export default function DownloadPage() {
   return (
     <main className="overflow-x-hidden">
       <section className="bg-brand-orange min-h-screen flex items-center justify-center">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-[7rem]">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center max-w-3xl mx-auto">
+        <div className="container mx-auto px-4 sm:px-[15vw] py-[7vw]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[0vw] sm:gap-[6vw] items-center justify-center max-w-none mx-auto">
             {/* Left Side - Content */}
             <div className="flex flex-col items-center justify-center text-white order-2 lg:order-1">
               {/* Logo */}
-              <div className="relative w-[19.99vw] h-[19.99vw] sm:w-[12vw] sm:h-[12vw] mb-2 mt-2 sm:mt-0 sm:mb-2">
+              <div className="relative w-[19.99vw] h-[auto] sm:w-[12vw] sm:h-[12vw] mb-2 mt-2 sm:mt-0 sm:mb-2">
                 <Image
                   src="/images/logos/app-icon.png"
                   alt="Sappnin Logo"
@@ -40,19 +40,19 @@ export default function DownloadPage() {
 
               {/* Store Buttons */}
                 <DownloadButtons />
-              <div className="flex items-center gap-0 lg:gap-0">
-              </div>
             </div>
 
             {/* Right Side - Phone Mockup */}
             <div className="flex justify-center order-1 lg:order-2">
               <div className="relative w-full mx-auto max-w-[43.18vw] sm:max-w-[29.44vw] h-auto">
-                <div className="relative h-[80.45vw] sm:h-[41vw]">
+                <div className="relative">
                   <Image
                     src="/images/download/profile-card.webp"
                     alt="Sappnin App"
-                    fill
-                    className="object-contain"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="object-contain w-[40.44vw] h-auto sm:w-[20.44vw] mx-auto"
                     priority
                   />
                 </div>

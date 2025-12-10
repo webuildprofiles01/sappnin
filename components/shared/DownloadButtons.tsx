@@ -3,29 +3,32 @@ import Link from "next/link"
 
 export function DownloadButtons() {
   return (
-    <div className="flex flex-row gap-4 md:gap-4 max-w-none md:max-w-[30vw]">
+    <div className="flex flex-row items-center justify-center gap-[4vw] sm:gap-[30px] w-[70vw] sm:w-[40vw] h-auto">
       <Link 
         href="#" 
-        className="w-[28.36vw] h-[62px] md:w-[19.69vw] md:h-[60px] relative transition-transform hover:scale-105"
+        className="relative transition-transform hover:scale-105"
       >
         <Image
           src="/images/logos/app-store.png"
           alt="Download on the App Store"
-          fill
-          className="object-contain"
+          sizes="100vw"
+          width={0}
+          height={0}
           priority
+          className="object-contain w-[125.26px] h-[62px] sm:w-[183.4px] sm:h-[60px]"
         />
       </Link>
       <Link 
         href="#" 
-        className="w-[28.36vw] h-[62px] md:w-[19.69vw] md:h-[60px] relative transition-transform hover:scale-105"
+        className="relative transition-transform hover:scale-105"
       >
         <Image
           src="/images/logos/google-play.png"
           alt="Get it on Google Play"
-          fill
-          className="object-contain"
-          priority
+          sizes="100vw"
+          width={0}
+          height={0}
+          className="object-contain w-[125.26px] h-[62px] sm:w-[183.4px] sm:h-[60px]"
         />
       </Link>
     </div>

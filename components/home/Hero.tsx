@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { Container } from "@/components/shared/Container"
 import { DownloadButtons } from "@/components/shared/DownloadButtons"
 
 export function Hero() {
@@ -30,7 +29,7 @@ export function Hero() {
       <div className="relative z-10 h-[100vh] sm:h-[115vh] flex flex-col justify-end pb-[8vh] w-full">
         <div className="flex flex-col items-center justify-end w-full">
           {/* Main Title */}
-          <h1 className="font-extrabold leading-none text-[19.31vw] sm:text-[16.49vw] md:text-[16.49vw] lg:text-[16.49vw] xl:text-[16.49vw] pt-0 text-brand-orange text-center">
+          <h1 className="font-extrabold leading-none text-[19.31vw] sm:text-[16.49vw] pt-0 text-brand-orange text-center">
             SAPPNIN
           </h1>
 
@@ -40,9 +39,9 @@ export function Hero() {
           </p>
 
           {/* Download Buttons */}
-          <div className="flex flex-row items-center justify-center gap-3 sm:gap-6">
             <DownloadButtons />
-          </div>
+          {/* <div className="flex justify-around border-2 border-white/70 rounded-full gap-0">
+          </div> */}
         </div>
       </div>
     </section>
