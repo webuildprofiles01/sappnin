@@ -4,9 +4,9 @@ import { Container } from "@/components/shared/Container"
 export function ChatFeatures() {
   return (
     <section className="bg-brand-orange pt-12 lg:pt-20 w-screen overflow-visible mt-[0px] sm:mt-[-10vw] gap-0">
-      <Container >
+      <div >
         {/* Real-time Chat */}
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-0 items-center mb-5 sm:mb-20 px-5 sm:px-20">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-0 items-center mb-5 sm:mb-20 px-2 sm:px-20">
           {/* Text Content */}
           <div className="hidden sm:block text-white w-full text-center lg:text-left">
             <h2 className="text-[4.98vw] md:text-[4.98vw] font-bold leading-none">
@@ -59,11 +59,11 @@ export function ChatFeatures() {
             </p>
           </div>
         </div>
-      </Container>
+      </div>
 
-      <Container >
+      <div className="px-5">
         {/* Disappearing Chat */}
-        <div className="grid lg:grid-cols-2 gap-4 lg:gap-12 items-center mt-20 sm:mt-[-180px]">
+        <div className="grid lg:grid-cols-2 gap-4 sm:gap-4 items-center mt-20 sm:mt-[-10vw]">
           {/* Mobile Title */}
           <div className="text-white text-center lg:text-left block sm:hidden order-1">            
             <h2 className="text-[8.26vw] sm:text-[4.58vw] font-bold leading-none mb-0">
@@ -101,12 +101,16 @@ export function ChatFeatures() {
                 CHAT:
               </span>
             </h2>
-            <p className="text-[4.77vw] md:text-[2.37vw] font-semibold sm:block mt-6">
-              Conversations vanish when you go offline, ensuring timely and private interactions.
+            <p className="text-[4.77vw] md:text-[2.37vw] font-normal sm:font-semibold sm:block mt-6">
+              Conversations vanish when you go 
+              <br />
+              offline, ensuring timely and private
+              <br />
+               interactions.
             </p>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   )
 } 
