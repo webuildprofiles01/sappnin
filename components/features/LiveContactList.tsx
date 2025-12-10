@@ -73,7 +73,7 @@ export function LiveContactList() {
                     </span>
                 </p>
               </h2>
-              <p className="text-[2.37vw] sm:text-[2.37vw] leading-[2.7rem] font-semibold mt-6">
+              <p className="text-[2.37vw] sm:text-[2.37vw] leading-[3.37vw] font-semibold mt-6">
                 Easily access and interact with online
                 <br />contacts in real time.
               </p>

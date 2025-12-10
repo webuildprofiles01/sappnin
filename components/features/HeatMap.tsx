@@ -4,7 +4,7 @@ import { Container } from "@/components/shared/Container"
 export function HeatMap() {
   return (
     <section className="bg-brand-orange pt-[10vw] px-2 sm:px-10">
-      <div className="max-w-[1440px]">
+      <div className="max-w-none mx-auto px-[6vw]">
         <div className="grid lg:grid-cols-2 items-top">
           {/* Text Content */}
           <div className="text-white text-center lg:text-left mt-0 sm:mt-20">

@@ -16,7 +16,7 @@ export function ChatFeatures() {
                 CHAT:
               </p>
             </h2>
-            <p className="text-[2.37vw] md:text-[2.37vw] leading-[2.7rem] font-semibold hidden sm:block mt-6">
+            <p className="text-[2.37vw] md:text-[2.37vw] leading-[3.37vw] font-semibold hidden sm:block mt-6">
               Engage in live conversations with
               <br />others who are online looking for
               <br />similar connections.
