@@ -4,7 +4,7 @@ import { Container } from "@/components/shared/Container"
 export function HeatMap() {
   return (
     <section className="bg-brand-orange pt-[10vw] px-2 sm:px-10">
-      <Container>
+      <div>
         <div className="grid lg:grid-cols-2 items-top">
           {/* Text Content */}
           <div className="text-white text-center lg:text-left mt-0 sm:mt-20">
@@ -39,11 +39,12 @@ export function HeatMap() {
           <div className="text-white text-center lg:text-left w-full">
             <p className="text-[4.77vw] sm:text-[4.77vw] font-regular block sm:hidden">
               See areas where users are currently
-              <br />active for spontaneous connections.
+              <br />
+              active for spontaneous connections.
             </p>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   )
 } 
