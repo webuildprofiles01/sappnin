@@ -83,7 +83,8 @@ export function ContactForm() {
         )}
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="space-y-1">
+          <div className="grid grid-cols-2 sm:grid-cols-1 gap-4">
+            <div className="space-y-1">
             <label
               htmlFor="firstName"
               className="hidden sm:block text-white/80 sm:text-[0.9vw] font-medium"
@@ -96,7 +97,7 @@ export function ContactForm() {
               placeholder="Enter your first name"
               value={formData.firstName}
               onChange={handleChange}
-              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 placeholder-text-[2.32vw] sm:placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-[5.12px] sm:rounded-lg p-3 text-black placeholder:text-gray-350 placeholder:text-[2.52vw] sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
@@ -114,9 +115,10 @@ export function ContactForm() {
               placeholder="Enter your last name"
               value={formData.lastName}
               onChange={handleChange}
-              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 placeholder-text-[2.32vw] sm:placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-[5.12px] sm:rounded-lg p-3 text-black placeholder:text-gray-350 placeholder:text-[2.52vw] sm:placeholder:text-[0.9vw]"
               required
             />
+          </div>
           </div>
 
           <div className="space-y-1">
@@ -133,7 +135,7 @@ export function ContactForm() {
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
-              className="bg-white border-0 rounded-lg p-3 text-black placeholder:text-gray-500 placeholder-text-[2.32vw] sm:placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-[5.12px] sm:rounded-lg p-3 text-black placeholder:text-gray-350 placeholder:text-[2.52vw] sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
@@ -151,7 +153,7 @@ export function ContactForm() {
               placeholder="Write your Message"
               value={formData.message}
               onChange={handleChange}
-              className="bg-white border-0 rounded-lg p-3 min-h-[100px] text-black placeholder:text-gray-500 placeholder-text-[2.32vw] sm:placeholder:text-[0.9vw]"
+              className="bg-white border-0 rounded-[5.12px] sm:rounded-lg p-3 min-h-[100px] text-black placeholder:text-gray-350 placeholder:text-[2.52vw] sm:placeholder:text-[0.9vw]"
               required
             />
           </div>
