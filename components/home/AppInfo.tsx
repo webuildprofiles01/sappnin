@@ -29,7 +29,7 @@ export function AppInfo() {
       {/* Desktop Layout */}
       <div className="hidden sm:block relative ">
         {/* W Logo - Desktop Only */}
-        <div className="hidden sm:block relative transform translate-y-[30%] translate-x-[-10%]">
+        <div className="hidden sm:block relative transform translate-y-[30%] translate-x-[-5%]">
           <Image
             src="/images/logos/app-icon.png"
             alt="Sappnin W"
@@ -38,7 +38,7 @@ export function AppInfo() {
             sizes="100vw"
             className="
             object-contain 
-            w-[34.339vw]
+            w-[24.339vw]
             h-[auto]
           "
           />
@@ -54,7 +54,7 @@ export function AppInfo() {
               className="
               object-contain 
               object-right-bottom
-              w-[36.45vw]      /* default */
+              w-[26.45vw]      /* default */
               h-[auto]
             "
               width={0}
