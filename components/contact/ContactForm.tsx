@@ -65,7 +65,7 @@ export function ContactForm() {
 
   return (
     <div className="max-w-[90vw] sm:max-w-[37.21vw] h-[auto] mx-auto w-full border-0 sm:border-2 sm:border-white rounded-2xl">
-      <div className="bg-transparent sm:bg-black/40 backdrop-blur-none sm:backdrop-blur-sm rounded-2xl p-0 sm:p-8 border-none sm:border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+      <div className="bg-transparent sm:bg-black/40 backdrop-blur-none sm:backdrop-blur-sm rounded-2xl p-0 sm:p-8 border-none sm:border border-white/20">
         <h2 className="text-[6.33vw] sm:text-[3.06vw] font-bold mb-4 text-center text-white">
           CONTACT US
         </h2>
