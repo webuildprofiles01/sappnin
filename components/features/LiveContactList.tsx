@@ -14,7 +14,7 @@ export function LiveContactList() {
               width={0}
               height={0}
               sizes="100vw"
-              className="opacity-100 w-[40.11vw] h-auto"
+              className="opacity-100 w-[30.11vw] h-auto"
               priority
             />
           </div>
@@ -42,7 +42,7 @@ export function LiveContactList() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="object-contain w-[49.71vw] sm:w-[36.71vw] h-auto mx-auto"
+                  className="object-contain w-[49.71vw] sm:w-[26.71vw] h-auto mx-auto"
                   priority
                 />
               </div>

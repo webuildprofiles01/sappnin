@@ -30,7 +30,7 @@ export function HeatMap() {
                 sizes="100vw"
                 width={0}
                 height={0}
-                className="object-contain w-[47.98vw] sm:w-[30.98vw] h-auto mx-auto"
+                className="object-contain w-[47.98vw] sm:w-[25.98vw] h-auto mx-auto"
                 priority
               />
             </div>

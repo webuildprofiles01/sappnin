@@ -45,7 +45,7 @@ export function AppInfo() {
         </div>
 
         {/* Phone Mockup */}
-        <div className="absolute top-[10%] right-0 -bottom-[30%] lg:bottom-[10%] w-2/3">
+        <div className="absolute top-[0%] right-0 -bottom-[30%] lg:bottom-[10%] w-2/3">
           <div className="relative right[30%]">
             <Image
               src="/images/features/phone-mockup.png"

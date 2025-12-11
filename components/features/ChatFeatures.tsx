@@ -42,7 +42,7 @@ export function ChatFeatures() {
                   src="/images/features/real-time-chat.png"
                   alt="Real-time Chat"
                   sizes="100vw"
-                  className="object-contain object-center w-[49.71vw] sm:w-[36.71vw] h-auto mx-auto"
+                  className="object-contain object-center w-[49.71vw] sm:w-[26.71vw] h-auto mx-auto"
                   priority
                   width={0}
                   height={0}
@@ -85,7 +85,7 @@ export function ChatFeatures() {
                   sizes="100vw"
                   width={0}
                   height={0}
-                  className="object-contain object-center w-[59.71vw] sm:w-[49.71vw] h-auto mx-auto"
+                  className="object-contain object-center w-[69.71vw] sm:w-[39.71vw] h-auto mx-auto"
                   priority
                 />
               </div>
