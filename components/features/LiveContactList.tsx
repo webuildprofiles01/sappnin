@@ -7,7 +7,7 @@ export function LiveContactList() {
       <div>
         <div className="relative min-h-[600px] overflow-visible">
           {/* Large W Logo Desktop */}
-          <div className="absolute -left-[5vw] -bottom-[20%] hidden sm:block">
+          <div className="absolute -left-[5vw] -bottom-[10%] hidden sm:block">
             <Image
               src="/images/logos/app-icon.png"
               alt="Sappnin W"
