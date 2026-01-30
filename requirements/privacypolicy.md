@@ -118,7 +118,7 @@ Right to Object: You can object to data processing based on legitimate interests
 
 Right to Withdraw Consent: If processing is based on consent, you may withdraw it at any time.
 
-To exercise these rights, contact us at info@sappnin.io.
+To exercise these rights, contact us at sappninteam@gmail.com.
 
 8. Data Security
 
@@ -126,7 +126,7 @@ We implement industry-standard security measures to protect your data, including
 
 9. Data Deletion & Account Termination
 
-You may request the deletion of your personal data by contacting us at info@sappnin.io. Upon request:
+You may request the deletion of your personal data by contacting us at sappninteam@gmail.com. Upon request:
 
 Your account will be permanently deleted.
 
@@ -160,7 +160,7 @@ We may update this Privacy Policy periodically. Significant changes will be comm
 
 For questions about this Privacy Policy or to exercise your rights, contact us at:
 
-Email: info@sappnin.io
+Email: sappninteam@gmail.com
 
 Website: www.sappnin.io
 

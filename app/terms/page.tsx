@@ -109,7 +109,7 @@ export default function TermsOfService() {
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">14. Contact Information</h2>
             <p className="mb-6">
-              For any inquiries or support, contact us at: <a href="mailto:info@sappnin.io" className="text-brand-orange hover:underline">info@sappnin.io</a>
+              For any inquiries or support, contact us at: <a href="mailto:sappninteam@gmail.com" className="text-brand-orange hover:underline">sappninteam@gmail.com</a>
             </p>
 
             <p className="mt-8 mb-6">

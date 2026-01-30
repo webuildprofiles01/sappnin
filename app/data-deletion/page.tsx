@@ -31,7 +31,7 @@ export default function DataDeletionPolicy() {
               If you are unable to delete your account through the app, you can submit a request by emailing us:
             </p>
             <ul className="list-disc pl-6 mb-6">
-              <li>Email: <a href="mailto:info@sappnin.io" className="text-brand-orange hover:underline">info@sappnin.io</a></li>
+              <li>Email: <a href="mailto:sappninteam@gmail.com" className="text-brand-orange hover:underline">sappninteam@gmail.com</a></li>
               <li>Subject: &quot;Request for Data Deletion&quot;</li>
               <li>Include:
                 <ul className="list-disc pl-6 mt-2">
@@ -56,8 +56,8 @@ export default function DataDeletionPolicy() {
 
             <p className="mt-8 mb-6">
               If you have any questions, please contact us at{" "}
-              <a href="mailto:info@sappnin.io" className="text-brand-orange hover:underline">
-                info@sappnin.io
+              <a href="mailto:sappninteam@gmail.com" className="text-brand-orange hover:underline">
+                sappninteam@gmail.com
               </a>
             </p>
           </div>

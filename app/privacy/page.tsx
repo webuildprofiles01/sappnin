@@ -69,7 +69,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-semibold mt-8 mb-4">7. Contact Information</h2>
             <p className="mb-6">
               For questions about this Privacy Policy or to exercise your rights, contact us at:<br />
-              Email: <a href="mailto:info@sappnin.io" className="text-brand-orange hover:underline">info@sappnin.io</a><br />
+              Email: <a href="mailto:sappninteam@gmail.com" className="text-brand-orange hover:underline">sappninteam@gmail.com</a><br />
               Website: <a href="https://www.sappnin.io" className="text-brand-orange hover:underline">www.sappnin.io</a>
             </p>
 
@@ -83,7 +83,7 @@ export default function PrivacyPolicy() {
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">9. Data Deletion & Account Termination</h2>
             <p className="mb-6">
-              You may request the deletion of your personal data by contacting us at info@sappnin.io. Upon request:
+              You may request the deletion of your personal data by contacting us at sappninteam@gmail.com. Upon request:
             </p>
             <ul className="list-disc pl-6 mb-6">
               <li>Your account will be permanently deleted.</li>
@@ -112,7 +112,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-semibold mt-8 mb-4">13. Contact Information</h2>
             <p className="mb-6">
               For questions about this Privacy Policy or to exercise your rights, contact us at:<br />
-              Email: <a href="mailto:info@sappnin.io" className="text-brand-orange hover:underline">info@sappnin.io</a><br />
+              Email: <a href="mailto:sappninteam@gmail.com" className="text-brand-orange hover:underline">sappninteam@gmail.com</a><br />
               Website: <a href="https://www.sappnin.io" className="text-brand-orange hover:underline">www.sappnin.io</a>
             </p>
 

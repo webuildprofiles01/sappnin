@@ -115,6 +115,6 @@ We reserve the right to modify these Terms at any time. Users will be notified o
 
 14. Contact Information
 
-For any inquiries or support, contact us at: info@sappnin.io
+For any inquiries or support, contact us at: sappninteam@gmail.com
 
 By using Sappnin, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.

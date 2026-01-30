@@ -11,7 +11,7 @@ You can request to delete your data in one of the following ways:
 • Confirm your request
 2. Email Request
 If you are unable to delete your account through the app, you can submit a request by emailing us:
-Email: info@sappnin.io
+Email: sappninteam@gmail.com
 Subject: "Request for Data Deletion"
 Include:
 • Your registered email address
@@ -27,4 +27,4 @@ Exceptions
 • Some data may be retained for legal, security, or fraud prevention reasons as required by
 law.
 • Anonymized data may be kept for analytics but will not be linked to your identity.
-If you have any questions, please contact us at info@sappnin.io
+If you have any questions, please contact us at sappninteam@gmail.com
