@@ -1,0 +1,21 @@
+{
+  "name": "Sappnin",
+  "short_name": "Sappnin",
+  "description": "Creating spontaneous meetups with individuals and social groups",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FF4525",
+  "theme_color": "#FF4525",
+  "icons": [
+    {
+      "src": "/images/logos/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logos/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 
