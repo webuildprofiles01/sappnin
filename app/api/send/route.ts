@@ -1,6 +1,20 @@
 import { NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+
+export const runtime = "nodejs";
+
+const CONTACT_EMAIL_TEMPLATE = `
+<!DOCTYPE html>
+<html>
+  <body style="font-family: Arial, sans-serif; line-height: 1.5;">
+    <h2>Sappnin Contact Form Submission</h2>
+    <p><strong>First Name:</strong> {{firstName}}</p>
+    <p><strong>Last Name:</strong> {{lastName}}</p>
+    <p><strong>Email:</strong> {{email}}</p>
+    <p><strong>Message:</strong></p>
+    <p>{{message}}</p>
+  </body>
+</html>
+`;
 
 export async function POST(req: Request) {
   try {
@@ -17,12 +31,8 @@ export async function POST(req: Request) {
     const resend = new Resend(resendApiKey);
     const { firstName, lastName, email, message } = await req.json();
 
-    // Load HTML template file
-    const templatePath = path.join(process.cwd(), "emails", "contact-template.html");
-    let html = fs.readFileSync(templatePath, "utf8");
-
-    // Replace placeholders with actual data
-    html = html
+    // Build HTML from a bundled template string to avoid filesystem/runtime issues.
+    const html = CONTACT_EMAIL_TEMPLATE
       .replace("{{firstName}}", firstName)
       .replace("{{lastName}}", lastName)
       .replace("{{email}}", email)
