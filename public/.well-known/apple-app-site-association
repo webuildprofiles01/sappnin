@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "NT9ZZHK7H9.io.sappnin",
+        "paths": [
+          "/__/auth/*",
+          "/finishSignUp/*",
+          "*"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "NT9ZZHK7H9.io.sappnin"
+    ]
+  }
+}
