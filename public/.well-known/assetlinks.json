@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "sappnin.io",
+      "sha256_cert_fingerprints": [
+        "59:F4:6E:A3:A0:B5:6C:A6:27:6C:71:84:A8:D9:05:69:90:08:AC:74:5A:A8:7E:CB:21:EF:BF:A8:14:48:5C:FB"
+      ]
+    }
+  }
+]
